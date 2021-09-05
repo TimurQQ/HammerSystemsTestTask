@@ -1,0 +1,6 @@
+package com.ilyasov.delivery_app_hammer_systems_test_task.presentation.fragments
+
+import com.ilyasov.delivery_app_hammer_systems_test_task.R
+import com.ilyasov.delivery_app_hammer_systems_test_task.presentation.fragments.base.BaseFragment
+
+class MainFragment : BaseFragment(R.layout.fragment_main)
