@@ -4,5 +4,5 @@ import com.ilyasov.delivery_app_hammer_systems_test_task.domain.entity.Cocktails
 import retrofit2.Response
 
 interface APIInterface {
-    suspend fun getCocktails(): Response<CocktailsResponse>
+    suspend fun getCocktails(firstLetter: String = "a"): Response<CocktailsResponse>
 }

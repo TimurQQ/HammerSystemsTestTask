@@ -8,5 +8,6 @@ import javax.inject.Inject
 class RemoteRepositoryImpl @Inject constructor(
     private val cockTailsAPI: APIInterface
 ) : RemoteRepository {
-    override suspend fun getCocktails(): Response<CocktailsResponse> = cockTailsAPI.getCocktails()
+    override suspend fun getCocktails(firstLetter: String): Response<CocktailsResponse> =
+        cockTailsAPI.getCocktails()
 }

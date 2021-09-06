@@ -8,5 +8,6 @@ import javax.inject.Inject
 class GetCocktailsUseCase @Inject constructor(
     private val repo: RemoteRepository
 ) {
-    suspend fun execute(): Response<CocktailsResponse> = repo.getCocktails()
+    suspend fun execute(firstLetter: String = "a"): Response<CocktailsResponse> =
+        repo.getCocktails(firstLetter)
 }

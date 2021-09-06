@@ -4,31 +4,31 @@ import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
 
 data class CocktailEntity(
-    @SerializedName("dateModified")
-    @Expose
-    val dateModified: String,
     @SerializedName("idDrink")
     @Expose
     val id: String,
-    @SerializedName("strAlcoholic")
-    @Expose
-    val strAlcoholic: String,
-    @SerializedName("strCategory")
-    @Expose
-    val category: String,
     @SerializedName("strDrink")
     @Expose
     val name: String,
-    @SerializedName("strDrinkThumb")
+    @SerializedName("strTags")
     @Expose
-    val imgURL: String,
+    val tags: String,
+    @SerializedName("strCategory")
+    @Expose
+    val category: String,
+    @SerializedName("strAlcoholic")
+    @Expose
+    val strAlcoholic: String,
     @SerializedName("strGlass")
     @Expose
     val glassType: String,
     @SerializedName("strInstructions")
     @Expose
     val instruction: String,
-    @SerializedName("strTags")
+    @SerializedName("strDrinkThumb")
     @Expose
-    val tags: String,
+    val imgURL: String,
+    @SerializedName("dateModified")
+    @Expose
+    val dateModified: String,
 )
