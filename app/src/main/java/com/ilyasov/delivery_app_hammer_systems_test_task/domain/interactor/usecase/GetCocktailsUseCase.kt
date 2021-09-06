@@ -5,7 +5,9 @@ import com.ilyasov.delivery_app_hammer_systems_test_task.domain.entity.Cocktails
 import com.ilyasov.delivery_app_hammer_systems_test_task.util.Constants.Companion.BASE_LETTER
 import retrofit2.Response
 import javax.inject.Inject
+import javax.inject.Singleton
 
+@Singleton
 class GetCocktailsUseCase @Inject constructor(
     private val repo: RemoteRepository
 ) {

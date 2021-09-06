@@ -12,5 +12,7 @@ class Constants {
         const val STOP_LOADING = false
         const val RESPONSE_FAILED =
             "Error, the request was not processed correctly. Response unsuccessful"
+        const val NO_NETWORK_CONNECTION =
+            "No Internet Connection. Please check your internet connection"
     }
 }

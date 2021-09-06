@@ -25,11 +25,6 @@ class MenuFragment : BaseFragment(R.layout.fragment_menu) {
         setupCategories()
     }
 
-    override fun onResume() {
-        super.onResume()
-        viewModel.getCocktails()
-    }
-
     private fun setupObserver() {
         viewModel.loadingMutableLiveData.observe(viewLifecycleOwner, { visibility ->
             progressBar.isVisible(visibility)
@@ -40,6 +35,10 @@ class MenuFragment : BaseFragment(R.layout.fragment_menu) {
         viewModel.cocktailsListLiveData.observe(viewLifecycleOwner) { response ->
             foodEntitiesAdapter.listOfItems = response
             foodEntitiesAdapter.notifyDataSetChanged()
+        }
+        viewModel.networkConnectionUseCase.observe(viewLifecycleOwner) { isConnected ->
+            if (isConnected) viewModel.getCocktails(lastView.text.toString())
+            if (!isConnected) showToast("Connection lost")
         }
     }
 
