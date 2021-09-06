@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="match_constraint">0dp</dimen>
+    <dimen name="margin_20dp">20dp</dimen>
+    <dimen name="size_160dp">160dp</dimen>
+    <dimen name="padding_66dp">66dp</dimen>
+    <dimen name="padding_5dp">5dp</dimen>
+    <dimen name="size_15sp">15sp</dimen>
+    <dimen name="padding_50dp">50dp</dimen>
+    <dimen name="size_16sp">16sp</dimen>
+</resources>
