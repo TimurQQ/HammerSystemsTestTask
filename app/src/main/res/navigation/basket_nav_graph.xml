@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/menu_basket"
+    app:startDestination="@id/BasketFragment">
+
+    <fragment
+        android:id="@+id/BasketFragment"
+        android:name="com.ilyasov.delivery_app_hammer_systems_test_task.presentation.fragments.BasketFragment"
+        tools:layout="@layout/fragment_basket" />
+
+</navigation>

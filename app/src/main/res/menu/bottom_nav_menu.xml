@@ -19,7 +19,7 @@
         tools:ignore="HardcodedText" />
 
     <item
-        android:id="@+id/menu_bucket"
+        android:id="@+id/menu_basket"
         android:enabled="true"
         android:icon="@drawable/ic_bucket"
         android:title="Корзина"
