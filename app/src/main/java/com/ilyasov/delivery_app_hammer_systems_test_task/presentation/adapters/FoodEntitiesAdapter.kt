@@ -28,6 +28,7 @@ class FoodEntitiesAdapter : RecyclerView.Adapter<FoodEntitiesAdapter.ArticleView
         holder.itemView.apply {
             ivFoodImage.loadFromUrl(cocktail.imgURL)
             tvFoodName.text = cocktail.name
+            tvDescription.text = cocktail.instruction
         }
     }
 }

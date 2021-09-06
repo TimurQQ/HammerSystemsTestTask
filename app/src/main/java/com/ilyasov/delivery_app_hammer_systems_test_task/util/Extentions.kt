@@ -14,6 +14,8 @@ fun View.isVisible(visibility: Boolean) =
 fun ImageView.loadFromUrl(url: String?) {
     Glide.with(this)
         .load(url)
+        .override(500, 500)
+        .fitCenter()
         .error(R.drawable.placeholder)
         .into(ivFoodImage)
 }

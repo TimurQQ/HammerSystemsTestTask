@@ -19,15 +19,17 @@ class GetCocktailsViewModel @Inject constructor(
     val loadingMutableLiveData: MutableLiveData<Boolean> = MutableLiveData()
     val errorStateLiveData: MutableLiveData<String> = MutableLiveData()
 
-    fun getCocktails() = viewModelScope.launch(Dispatchers.Main) {
+    fun getCocktails(firstLetter: String = "a") = viewModelScope.launch(Dispatchers.Main) {
         loadingMutableLiveData.postValue(START_LOADING)
-        val response = getCocktailsUseCase.execute()
+        val response = getCocktailsUseCase.execute(firstLetter)
         loadingMutableLiveData.postValue(STOP_LOADING)
         val body = response.body()
 
         if (!response.isSuccessful || body == null) {
             errorStateLiveData.postValue(RESPONSE_FAILED)
             return@launch
-        } else cocktailsListLiveData.postValue(body.drinks)
+        } else {
+            cocktailsListLiveData.postValue(body.drinks)
+        }
     }
 }
