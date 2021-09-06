@@ -9,11 +9,12 @@ interface CockTailsAPI : APIInterface {
 
     companion object {
         const val GET_COCKTAILS = "api/json/v1/1/search.php"
+        const val SET_FIRST_LETTER = "f"
     }
 
     @GET(GET_COCKTAILS)
     override suspend fun getCocktails(
-        @Query("f")
+        @Query(SET_FIRST_LETTER)
         firstLetter: String
     ): Response<CocktailsResponse>
 }

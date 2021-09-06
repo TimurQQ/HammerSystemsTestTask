@@ -3,4 +3,10 @@
     <string name="view_image">ViewImage</string>
     <string name="profile_fragment_title">Profile fragment</string>
     <string name="basket_fragment_title">Basket Fragment</string>
+    <string name="default_price">от 345 р</string>
+    <string name="basic_location">Москва</string>
+    <string name="menu_food_title_text">Меню</string>
+    <string name="menu_profile_title_text">Профиль</string>
+    <string name="menu_basket_title_text">Корзина</string>
+    <string name="image_view_desc">Image Source</string>
 </resources>

@@ -11,5 +11,5 @@
         android:topRightRadius="@dimen/dimens_10dp" />
     <stroke
         android:width="@dimen/size_2dp"
-        android:color="#FD3A69" />
+        android:color="@color/pink" />
 </shape>

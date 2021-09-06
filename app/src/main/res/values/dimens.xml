@@ -1,18 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="match_constraint">0dp</dimen>
-    <dimen name="margin_20dp">20dp</dimen>
-    <dimen name="size_160dp">160dp</dimen>
-    <dimen name="padding_66dp">66dp</dimen>
-    <dimen name="padding_5dp">5dp</dimen>
-    <dimen name="size_15sp">15sp</dimen>
-    <dimen name="padding_50dp">50dp</dimen>
-    <dimen name="size_16sp">16sp</dimen>
-    <dimen name="padding_10dp">10dp</dimen>
-    <dimen name="dimens_15dp">15dp</dimen>
-    <dimen name="size_2dp">2dp</dimen>
-    <dimen name="dimens_10dp">10dp</dimen>
-    <dimen name="padding_15dp">15dp</dimen>
     <dimen name="app_bar_height">180dp</dimen>
+
+    //Size
+    <dimen name="match_constraint">0dp</dimen>
+    <dimen name="size_0dp">0dp</dimen>
+    <dimen name="size_2dp">2dp</dimen>
+    <dimen name="size_8dp">8dp</dimen>
+    <dimen name="size_24dp">24dp</dimen>
+    <dimen name="size_108dp">108dp</dimen>
+    <dimen name="size_160dp">160dp</dimen>
+    <dimen name="size_200dp">200dp</dimen>
+
+    //TextSize
+    <dimen name="size_16sp">16sp</dimen>
+    <dimen name="size_24sp">24sp</dimen>
+    <dimen name="size_25sp">25sp</dimen>
+
+    //Margin
+    <dimen name="margin_5dp">5dp</dimen>
+    <dimen name="margin_8dp">8dp</dimen>
+    <dimen name="margin_10dp">10dp</dimen>
+    <dimen name="margin_16dp">16dp</dimen>
+    <dimen name="margin_18dp">18dp</dimen>
+    <dimen name="margin_20dp">20dp</dimen>
+
+    //Padding
+    <dimen name="padding_5dp">5dp</dimen>
+    <dimen name="padding_10dp">10dp</dimen>
+    <dimen name="padding_15dp">15dp</dimen>
+    <dimen name="padding_25dp">25dp</dimen>
     <dimen name="padding_30dp">30dp</dimen>
+
+    <dimen name="dimens_10dp">10dp</dimen>
 </resources>

@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="10dp"
+    android:layout_margin="@dimen/margin_10dp"
     android:orientation="horizontal"
     android:padding="@dimen/padding_5dp">
 
@@ -16,7 +15,6 @@
         android:src="@mipmap/ic_launcher_round" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraint_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -29,7 +27,7 @@
             android:gravity="center"
             android:paddingTop="@dimen/padding_5dp"
             android:textColor="@android:color/black"
-            android:textSize="25sp"
+            android:textSize="@dimen/size_25sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -43,8 +41,8 @@
             android:ellipsize="end"
             android:gravity="center"
             android:maxLines="4"
-            android:paddingStart="25dp"
-            android:paddingEnd="25dp"
+            android:paddingStart="@dimen/padding_25dp"
+            android:paddingEnd="@dimen/padding_25dp"
             android:paddingBottom="@dimen/padding_5dp"
             android:textColor="@color/grey_description"
             android:textSize="@dimen/size_16sp"
@@ -53,21 +51,19 @@
             app:layout_constraintTop_toBottomOf="@+id/tvFoodName" />
 
         <TextView
-            android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="@dimen/margin_8dp"
+            android:layout_marginBottom="@dimen/margin_8dp"
             android:background="@drawable/rounded_shape"
             android:paddingLeft="@dimen/padding_15dp"
             android:paddingTop="@dimen/padding_5dp"
             android:paddingRight="@dimen/padding_15dp"
             android:paddingBottom="@dimen/padding_5dp"
-            android:text="от 345 р"
-            android:textColor="#FD3A69"
+            android:text="@string/default_price"
+            android:textColor="@color/pink"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            tools:ignore="HardcodedText" />
+            app:layout_constraintEnd_toEndOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

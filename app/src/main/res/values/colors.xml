@@ -9,9 +9,10 @@
     <color name="white">#FFFFFFFF</color>
     <color name="grey_description">#6F6A6A</color>
     <color name="gray_tint">#C3C4C9</color>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
     <color name="colorClicked">#FD3A69</color>
     <color name="backgroundClicked">#FBB3C4</color>
+    <color name="gray">#7B7B7B</color>
+    <color name="pink">#FD3A69</color>
+    <color name="poor_white">#F0F0F0</color>
+    <color name="background_color">#EDE9E9</color>
 </resources>

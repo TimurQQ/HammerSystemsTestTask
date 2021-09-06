@@ -1,12 +1,10 @@
 package com.ilyasov.delivery_app_hammer_systems_test_task
 
-import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
-
+import androidx.test.platform.app.InstrumentationRegistry
+import org.junit.Assert.assertEquals
 import org.junit.Test
 import org.junit.runner.RunWith
-
-import org.junit.Assert.*
 
 /**
  * Instrumented test, which will execute on an Android device.
@@ -19,6 +17,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.ilyasov.delivery_app_hammers_ystems_test_task", appContext.packageName)
+        assertEquals("com.ilyasov.delivery_app_hammer_systems_test_task", appContext.packageName)
     }
 }

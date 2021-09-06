@@ -2,7 +2,6 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/constraint"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".RootActivity">
@@ -11,7 +10,7 @@
         android:id="@+id/navHostFragmentForBottomNavigation"
         android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="@dimen/match_constraint"
         app:defaultNavHost="true"
         app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -20,12 +19,12 @@
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
-        android:layout_width="0dp"
+        android:layout_width="@dimen/match_constraint"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        android:background="#F0F0F0"
-        app:itemIconTint="#FD3A69"
-        app:itemTextColor="#FD3A69"
+        android:background="@color/poor_white"
+        app:itemIconTint="@color/pink"
+        app:itemTextColor="@color/pink"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"

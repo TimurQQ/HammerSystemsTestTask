@@ -5,6 +5,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.ilyasov.delivery_app_hammer_systems_test_task.domain.entity.CocktailEntity
 import com.ilyasov.delivery_app_hammer_systems_test_task.domain.interactor.usecase.GetCocktailsUseCase
+import com.ilyasov.delivery_app_hammer_systems_test_task.util.Constants.Companion.BASE_LETTER
 import com.ilyasov.delivery_app_hammer_systems_test_task.util.Constants.Companion.RESPONSE_FAILED
 import com.ilyasov.delivery_app_hammer_systems_test_task.util.Constants.Companion.START_LOADING
 import com.ilyasov.delivery_app_hammer_systems_test_task.util.Constants.Companion.STOP_LOADING
@@ -19,7 +20,7 @@ class GetCocktailsViewModel @Inject constructor(
     val loadingMutableLiveData: MutableLiveData<Boolean> = MutableLiveData()
     val errorStateLiveData: MutableLiveData<String> = MutableLiveData()
 
-    fun getCocktails(firstLetter: String = "a") = viewModelScope.launch(Dispatchers.Main) {
+    fun getCocktails(firstLetter: String = BASE_LETTER) = viewModelScope.launch(Dispatchers.Main) {
         loadingMutableLiveData.postValue(START_LOADING)
         val response = getCocktailsUseCase.execute(firstLetter)
         loadingMutableLiveData.postValue(STOP_LOADING)

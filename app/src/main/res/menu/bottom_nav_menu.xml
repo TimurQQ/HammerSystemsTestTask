@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="10dp"
     android:layout_height="10dp">
 
@@ -8,21 +7,18 @@
         android:id="@+id/menu_food"
         android:enabled="true"
         android:icon="@drawable/ic_food_menu"
-        android:title="Меню"
-        tools:ignore="HardcodedText" />
+        android:title="@string/menu_food_title_text" />
 
     <item
         android:id="@+id/menu_profile"
         android:enabled="true"
         android:icon="@drawable/ic_bottom_navigation_profile"
-        android:title="Профиль"
-        tools:ignore="HardcodedText" />
+        android:title="@string/menu_profile_title_text" />
 
     <item
         android:id="@+id/menu_basket"
         android:enabled="true"
         android:icon="@drawable/ic_bucket"
-        android:title="Корзина"
-        tools:ignore="HardcodedText" />
+        android:title="@string/menu_basket_title_text" />
 
 </menu>

@@ -16,6 +16,8 @@ import androidx.navigation.fragment.NavHostFragment
 import com.bumptech.glide.Glide
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.ilyasov.delivery_app_hammer_systems_test_task.R
+import com.ilyasov.delivery_app_hammer_systems_test_task.util.Constants.Companion.PIC_HEIGHT
+import com.ilyasov.delivery_app_hammer_systems_test_task.util.Constants.Companion.PIC_WIDTH
 import kotlinx.android.synthetic.main.item_food.view.*
 
 fun View.isVisible(visibility: Boolean) =
@@ -24,7 +26,7 @@ fun View.isVisible(visibility: Boolean) =
 fun ImageView.loadFromUrl(url: String?) {
     Glide.with(this)
         .load(url)
-        .override(500, 500)
+        .override(PIC_WIDTH, PIC_HEIGHT)
         .fitCenter()
         .error(R.drawable.placeholder)
         .into(ivFoodImage)

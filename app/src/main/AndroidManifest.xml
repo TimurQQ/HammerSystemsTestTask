@@ -14,7 +14,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DeliveryAppHammerSystemsTestTask"
-        android:usesCleartextTraffic="true">
+        android:usesCleartextTraffic="true"
+        android:fullBackupContent="@xml/backup_descriptor">
         <activity android:name="com.ilyasov.delivery_app_hammer_systems_test_task.RootActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
